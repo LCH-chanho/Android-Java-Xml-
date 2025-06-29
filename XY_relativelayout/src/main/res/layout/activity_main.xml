@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="#888888" >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#FFFF00"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/X"
+                android:text="X = 0"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#A7007F"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Y"
+                android:text="Y = 0"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#3322FF" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CENTER"
+            android:textSize="30dp"
+            android:background="#888888"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="CENTER"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LEFT"
+            android:textSize="30dp"
+            android:background="#888888"
+            android:padding="5dp"
+            android:text="LEFT"
+            android:layout_alignBaseline="@id/CENTER"
+            android:layout_toLeftOf="@id/CENTER" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RIGHT"
+            android:textSize="30dp"
+            android:background="#888888"
+            android:padding="5dp"
+            android:text="RIGHT"
+            android:layout_alignBaseline="@id/CENTER"
+            android:layout_toRightOf="@id/CENTER" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/UP"
+            android:textSize="30dp"
+            android:background="#888888"
+            android:padding="5dp"
+            android:text="UP"
+            android:layout_above="@id/CENTER"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DOWN"
+            android:textSize="30dp"
+            android:background="#888888"
+            android:padding="5dp"
+            android:text="DOWN"
+            android:layout_below="@id/CENTER"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
