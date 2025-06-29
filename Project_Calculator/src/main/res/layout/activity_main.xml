@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF9C4"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="첫번째 숫자를 입력하세요"
+        android:textColor="#4E4E4E"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="두번째 숫자를 입력하세요"
+        android:textColor="#4E4E4E"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/BtnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="더하기"
+        android:background="#AEDFF7"
+        android:textColor="#FFFFFF" />
+
+    <Button
+    android:id="@+id/BtnSub"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:text="빼기"
+    android:background="#AEDFF7"
+    android:textColor="#FFFFFF" />
+
+    <Button
+    android:id="@+id/BtnMul"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:text="곱하기"
+    android:background="#AEDFF7"
+    android:textColor="#FFFFFF" />
+
+    <Button
+    android:id="@+id/BtnDiv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:text="나누기"
+    android:background="#AEDFF7"
+    android:textColor="#FFFFFF" />
+
+    <TextView
+    android:id="@+id/TextResult"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:textColor="#F8BBD0"
+    android:layout_margin="10dp"
+    android:text="계산 결과 : "/>
+
+</LinearLayout>
+
+
+<!--    배경색 (파스텔 옐로우): #FFF9C4-->
+<!--    버튼 색 (파스텔 블루): #AEDFF7-->
+<!--    버튼 색 (라벤더): #D1B2FF-->
+<!--    텍스트 색 (회색): #4E4E4E-->
+<!--    텍스트 색 (파스텔 핑크): #F8BBD0-->
