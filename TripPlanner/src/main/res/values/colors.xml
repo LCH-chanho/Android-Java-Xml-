@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="btn_mountain">#A5D6A7</color> <!-- 연한 초록 -->
+    <color name="btn_sea">#90CAF9</color>      <!-- 연한 파랑 -->
+    <color name="btn_city">#FFD54F</color>     <!-- 연한 노랑 -->
+    <color name="btn_default">#E0E0E0</color>  <!-- 연회색 -->
+
+</resources>

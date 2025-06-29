@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- 1단: 상단 카테고리 버튼 (산, 바다, 도시) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMountain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="산" />
+
+        <Button
+            android:id="@+id/btnSea"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="바다" />
+
+        <Button
+            android:id="@+id/btnCity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="도시" />
+    </LinearLayout>
+
+
+    <!-- 2단: 이미지 9개 (3x3) + 체크 오버레이 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <GridLayout
+            android:id="@+id/imageGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:scaleType="fitXY"
+                android:layout_gravity="fill" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:scaleType="fitXY"
+                android:layout_gravity="fill" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:scaleType="fitXY"
+                android:layout_gravity="fill" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:scaleType="fitXY"
+                android:layout_gravity="fill" />
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:scaleType="fitXY"
+                android:layout_gravity="fill" />
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:scaleType="fitXY"
+                android:layout_gravity="fill" />
+
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:scaleType="fitXY"
+                android:layout_gravity="fill" />
+
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:scaleType="fitXY"
+                android:layout_gravity="fill" />
+
+            <ImageView
+                android:id="@+id/img9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:scaleType="fitXY"
+                android:layout_gravity="fill" />
+        </GridLayout>
+
+        <!-- 체크 표시 오버레이 -->
+        <ImageView
+            android:id="@+id/checkOverlay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="8dp"
+            android:src="@drawable/checked_red"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- 3단: 여행경비 출력 -->
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="여행경비는"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="#FFFFFF"/>
+
+    <!-- 4단: 여행지 소개 출력 -->
+    <TextView
+        android:id="@+id/txtIntro"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="여행지 소개는"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:gravity="top|start"
+        android:background="#FFFFFF" />
+
+</LinearLayout>
