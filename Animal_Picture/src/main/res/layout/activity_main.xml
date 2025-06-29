@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF9C4"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="선택을 시작하겠습니까?"
+        android:textColor="#4E4E4E"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/ChkAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="시작함"
+        android:textColor="#4E4E4E"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="좋아하는 애완동물은?"
+        android:background="#AEDFF7"
+        android:textColor="#000000"
+        android:padding="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/Rgroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        android:padding="8dp">
+
+        <RadioButton
+            android:id="@+id/Rdolongkkam"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="아롱까미"  />
+
+        <RadioButton
+            android:id="@+id/Rdolong"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="아롱이" />
+
+        <RadioButton
+            android:id="@+id/Rdokkam"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="까미" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/BtnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        android:text="선택 완료"/>
+
+    <ImageView
+        android:id="@+id/ImgPet"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="start"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        android:contentDescription="애완동물 사진" />
+
+
+</LinearLayout>
+
+
+    <!--    배경색 (파스텔 옐로우): #FFF9C4-->
+    <!--    버튼 색 (파스텔 블루): #AEDFF7-->
+    <!--    버튼 색 (라벤더): #D1B2FF-->
+    <!--    텍스트 색 (회색): #4E4E4E-->
+    <!--    텍스트 색 (파스텔 핑크): #F8BBD0-->
+
+    <!--dp는 고정이라 사용자 글자 설정 무시함 → 설정에서 글자 키울때 커지려면 sp
+    sp는 설정에따라 글자크기 커져서 View margin/padding에쓰면안됨 레이아웃 틀어짐-->
+
+    <!--fitCenter	가운데 정렬
+    centerInside	가운데 정렬 + 축소
+    fitStart	    왼쪽 상단 정렬
+    centerCrop	    가운데 정렬 + 크롭됨-->
